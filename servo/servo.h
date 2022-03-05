@@ -1,7 +1,7 @@
 #ifndef servo_h
 #define servo_h
 
-void setMillis(int servoPin, float millis);
-void setServo(int servoPin, float startMillis);
+void set_ms(int pin, float ms);
+void init_servo(int pin);
 
 #endif
