@@ -13,4 +13,4 @@ pico_sdk_init()
 include(example_auto_set_url.cmake)
 
 add_subdirectory(Tambourduine)
-add_subdirectory(Examples)
+add_subdirectory(servo)

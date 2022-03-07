@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include "tambourduine.h"
-int main(int argc, char **argv)
+int main()
 {
-    float tempo = atof(argv[0]);
-    start(tempo);
+    const float tempo = 1000;
+    start();
+    play(tempo);
     return 0;
 }

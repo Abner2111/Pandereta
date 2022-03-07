@@ -2,6 +2,8 @@
 #define tambourduine_h
 
 void routine(float state);
-void start(float tempo);
+void play(const float tempo);
+void vibrato();
+void start();
 
 #endif
