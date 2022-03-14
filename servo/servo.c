@@ -1,20 +1,20 @@
-#include "pico/stdlib.h"
 #include <stdio.h>
+#include "pico/stdlib.h"
 #include "hardware/pwm.h"
 #include "hardware/clocks.h"
 
 float clockDiv = 64;
 float wrap = 39062;
 
-void setMillis(int servoPin, float millis)
+void set_ms(int pin, float ms)
 {
-    pwm_set_gpio_level(servoPin, (millis/20000.f)*wrap);
+    pwm_set_gpio_level(pin, (ms/20000.f)*wrap);
 }
 
-void setServo(int servoPin, float startMillis)
+void init_servo(int pin)
 {
-    gpio_set_function(servoPin, GPIO_FUNC_PWM);
-    uint slice_num = pwm_gpio_to_slice_num(servoPin);
+    gpio_set_function(pin, GPIO_FUNC_PWM);
+    uint slice_num = pwm_gpio_to_slice_num(pin);
 
     pwm_config config = pwm_get_default_config();
     
@@ -30,5 +30,5 @@ void setServo(int servoPin, float startMillis)
 
     pwm_init(slice_num, &config, true);
 
-    setMillis(servoPin, startMillis);
+    set_ms(pin, 400);
 }

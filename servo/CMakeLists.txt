@@ -1,16 +1,11 @@
-cmake_minimum_required (VERSION 3.19)
+add_library(pico_servo servo.h servo.c)
 
-include(pico_sdk_import.cmake)
+target_link_libraries(pico_servo pico_stdlib hardware_pwm hardware_clocks)
 
-project(servo)
+target_include_directories(pico_servo PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
 
-pico_sdk_init()
+add_library(pico_servo_object servo.h servo.c)
 
+target_link_libraries(pico_servo_object pico_stdlib hardware_pwm hardware_clocks)
 
-add_executable(servo servo.c)
-
-
-pico_add_extra_outputs(servo)
-
-
-target_link_libraries(servo pico_stdlib)
+target_include_directories(pico_servo_object PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
