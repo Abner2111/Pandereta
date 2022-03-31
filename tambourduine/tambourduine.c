@@ -32,9 +32,9 @@ void play(const float tempo)
 {
     while(true)
     {
-        routine(2033,1733,0); 
+        routine(2033,1733,1400); 
         sleep_ms(tempo);
-        routine(1506,1067,0);
+        routine(1506,1067,1000);
         sleep_ms(tempo);
     }
 }
@@ -44,7 +44,7 @@ void start()
     init_servo(pin_0);
     init_servo(pin_1);
     init_servo(pin_2); //perc.
-    set_ms(1,1400);
     set_ms(0,1770);
-    //set_ms(2,1770);
+    set_ms(1,1400);
+    set_ms(2,1000);
 }
