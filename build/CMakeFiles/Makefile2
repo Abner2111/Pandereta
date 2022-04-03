@@ -1427,8 +1427,8 @@ pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_as
 
 # All Build rule for target.
 tambourduine\CMakeFiles\tambourduine.dir\all: pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\all
-tambourduine\CMakeFiles\tambourduine.dir\all: tambourduine\CMakeFiles\ELF2UF2Build.dir\all
 tambourduine\CMakeFiles\tambourduine.dir\all: servo\CMakeFiles\pico_servo.dir\all
+tambourduine\CMakeFiles\tambourduine.dir\all: tambourduine\CMakeFiles\ELF2UF2Build.dir\all
 	$(MAKE) $(MAKESILENT) -f tambourduine\CMakeFiles\tambourduine.dir\build.make /nologo -$(MAKEFLAGS) tambourduine\CMakeFiles\tambourduine.dir\depend
 	$(MAKE) $(MAKESILENT) -f tambourduine\CMakeFiles\tambourduine.dir\build.make /nologo -$(MAKEFLAGS) tambourduine\CMakeFiles\tambourduine.dir\build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Pandereta\build\CMakeFiles --progress-num=70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target tambourduine"

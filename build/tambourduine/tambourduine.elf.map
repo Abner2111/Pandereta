@@ -52,8 +52,6 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/tambourduine.dir/tambourduine.c.obj
  .data          0x00000000        0x0 CMakeFiles/tambourduine.dir/tambourduine.c.obj
  .bss           0x00000000        0x0 CMakeFiles/tambourduine.dir/tambourduine.c.obj
- .text.routine  0x00000000        0xc CMakeFiles/tambourduine.dir/tambourduine.c.obj
- .text.vibrato  0x00000000       0x28 CMakeFiles/tambourduine.dir/tambourduine.c.obj
  .rodata.pin_0  0x00000000        0x4 CMakeFiles/tambourduine.dir/tambourduine.c.obj
  .rodata.pin_1  0x00000000        0x4 CMakeFiles/tambourduine.dir/tambourduine.c.obj
  .rodata.pin_2  0x00000000        0x4 CMakeFiles/tambourduine.dir/tambourduine.c.obj
@@ -734,10 +732,6 @@ Discarded input sections
                 0x00000000       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .text.__wrap___aeabi_fcmpun
                 0x00000000       0x18 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .text.__wrap___aeabi_f2iz
-                0x00000000       0x4e CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .text.float2int
-                0x00000000       0x14 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .text.float2fix
                 0x00000000       0x14 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .text.float2ufix
@@ -865,8 +859,6 @@ Discarded input sections
                 0x00000000       0x44 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
  .text.fatan2_shim
                 0x00000000       0x88 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .text.float232_shims
-                0x00000000       0x18 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
  .text.float264_shims
                 0x00000000       0x4c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
  .text.d2fix_a_float
@@ -994,9 +986,9 @@ Discarded input sections
  .text          0x00000000        0x0 ..\servo\libpico_servo.a(servo.c.obj)
  .data          0x00000000        0x0 ..\servo\libpico_servo.a(servo.c.obj)
  .bss           0x00000000        0x0 ..\servo\libpico_servo.a(servo.c.obj)
- .text          0x00000000        0x0 C:\Users\neyss\AppData\Local\Temp\ccytbQwE.o
- .data          0x00000000        0x0 C:\Users\neyss\AppData\Local\Temp\ccytbQwE.o
- .bss           0x00000000        0x0 C:\Users\neyss\AppData\Local\Temp\ccytbQwE.o
+ .text          0x00000000        0x0 C:\Users\neyss\AppData\Local\Temp\ccSvSkRR.o
+ .data          0x00000000        0x0 C:\Users\neyss\AppData\Local\Temp\ccSvSkRR.o
+ .bss           0x00000000        0x0 C:\Users\neyss\AppData\Local\Temp\ccSvSkRR.o
  .data          0x00000000        0x0 c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-calloc.o)
@@ -1190,11 +1182,11 @@ LOAD c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../
 .boot2          0x10000000      0x100
                 0x10000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 C:\Users\neyss\AppData\Local\Temp\ccytbQwE.o
+ .boot2         0x10000000      0x100 C:\Users\neyss\AppData\Local\Temp\ccSvSkRR.o
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x1fc0
+.text           0x10000100     0x24c0
                 0x10000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1257,226 +1249,251 @@ LOAD c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .text*)
  .text          0x100002c4       0x48 c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .text.startup.main
-                0x1000030c       0x14 CMakeFiles/tambourduine.dir/main.c.obj
+                0x1000030c       0x8c CMakeFiles/tambourduine.dir/main.c.obj
                 0x1000030c                main
- .text.play     0x10000320       0x30 CMakeFiles/tambourduine.dir/tambourduine.c.obj
-                0x10000320                play
- .text.start    0x10000350       0x28 CMakeFiles/tambourduine.dir/tambourduine.c.obj
-                0x10000350                start
+ .text.routine  0x10000398       0x20 CMakeFiles/tambourduine.dir/tambourduine.c.obj
+                0x10000398                routine
+ .text.vibrato  0x100003b8       0x3c CMakeFiles/tambourduine.dir/tambourduine.c.obj
+                0x100003b8                vibrato
+ .text.fan      0x100003f4       0x9c CMakeFiles/tambourduine.dir/tambourduine.c.obj
+                0x100003f4                fan
+ .text.vertical
+                0x10000490       0xa4 CMakeFiles/tambourduine.dir/tambourduine.c.obj
+                0x10000490                vertical
+ .text.percussion
+                0x10000534      0x20c CMakeFiles/tambourduine.dir/tambourduine.c.obj
+                0x10000534                percussion
+ .text.hit      0x10000740       0x68 CMakeFiles/tambourduine.dir/tambourduine.c.obj
+                0x10000740                hit
+ .text.start    0x100007a8       0x50 CMakeFiles/tambourduine.dir/tambourduine.c.obj
+                0x100007a8                start
  .text.gpio_set_function
-                0x10000378       0x30 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000378                gpio_set_function
+                0x100007f8       0x30 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x100007f8                gpio_set_function
  .text.hw_claim_or_assert
-                0x100003a8       0x44 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x100003a8                hw_claim_or_assert
+                0x10000828       0x44 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x10000828                hw_claim_or_assert
  .text.running_on_fpga
-                0x100003ec       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x100003ec                running_on_fpga
+                0x1000086c       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x1000086c                running_on_fpga
  .text.spin_locks_reset
-                0x100003fc       0x1c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x100003fc                spin_locks_reset
+                0x1000087c       0x1c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x1000087c                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x10000418       0x18 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x10000418                next_striped_spin_lock_num
+                0x10000898       0x18 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x10000898                next_striped_spin_lock_num
  .text.timer_pool_entry_comparator
-                0x10000430       0x34 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000430                timer_pool_entry_comparator
+                0x100008b0       0x34 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100008b0                timer_pool_entry_comparator
  .text.sleep_until_callback
-                0x10000464       0x30 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100008e4       0x30 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock.isra.0
-                0x10000494      0x100 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000914      0x100 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x10000594      0x1c8 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000a14      0x1c8 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_add_alarm_at.constprop.0
-                0x1000075c      0x11c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000bdc      0x11c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x10000878       0x64 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000878                alarm_pool_init_default
+                0x10000cf8       0x64 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000cf8                alarm_pool_init_default
  .text.sleep_until
-                0x100008dc       0xac CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x100008dc                sleep_until
+                0x10000d5c       0xac CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000d5c                sleep_until
  .text.sleep_ms
-                0x10000988       0x38 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000988                sleep_ms
+                0x10000e08       0x38 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000e08                sleep_ms
  .text.hardware_alarm_irq_handler
-                0x100009c0       0xb8 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10000e40       0xb8 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x10000a78       0x18 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10000a78                hardware_alarm_claim
+                0x10000ef8       0x18 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10000ef8                hardware_alarm_claim
  .text.time_us_64
-                0x10000a90       0x14 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10000a90                time_us_64
+                0x10000f10       0x14 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10000f10                time_us_64
  .text.busy_wait_until
-                0x10000aa4       0x20 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10000aa4                busy_wait_until
+                0x10000f24       0x20 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10000f24                busy_wait_until
  .text.hardware_alarm_set_callback
-                0x10000ac4       0x8c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10000ac4                hardware_alarm_set_callback
+                0x10000f44       0x8c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10000f44                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x10000b50       0xe0 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10000b50                hardware_alarm_set_target
+                0x10000fd0       0xe0 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10000fd0                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x10000c30       0x3c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10000c30                hardware_alarm_cancel
+                0x100010b0       0x3c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x100010b0                hardware_alarm_cancel
  .text.lock_init
-                0x10000c6c       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x10000c6c                lock_init
+                0x100010ec       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x100010ec                lock_init
  .text.mutex_init
-                0x10000c7c       0x1c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x10000c7c                mutex_init
+                0x100010fc       0x1c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x100010fc                mutex_init
  .text.recursive_mutex_init
-                0x10000c98       0x1c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x10000c98                recursive_mutex_init
+                0x10001118       0x1c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10001118                recursive_mutex_init
  .text.ph_merge_nodes
-                0x10000cb4       0x68 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001134       0x68 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x10000d1c       0x3c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10000d1c                ph_post_alloc_init
+                0x1000119c       0x3c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x1000119c                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x10000d58       0x90 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10000d58                ph_merge_two_pass
+                0x100011d8       0x90 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x100011d8                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x10000de8       0xf8 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001268       0xf8 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x10000ee0       0xfc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10000ee0                ph_remove_head
+                0x10001360       0xfc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001360                ph_remove_head
  .text.ph_remove_and_free_node
-                0x10000fdc       0x7c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10000fdc                ph_remove_and_free_node
+                0x1000145c       0x7c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x1000145c                ph_remove_and_free_node
  .text.runtime_init
-                0x10001058       0xf0 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001058                runtime_init
- .text.exit     0x10001148        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001148                exit
- .text.panic    0x1000114c       0x30 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x1000114c                panic
+                0x100014d8       0xf0 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x100014d8                runtime_init
+ .text.exit     0x100015c8        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x100015c8                exit
+ .text.panic    0x100015cc       0x30 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x100015cc                panic
  .text.hard_assertion_failure
-                0x1000117c        0xc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x1000117c                hard_assertion_failure
+                0x100015fc        0xc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x100015fc                hard_assertion_failure
  .text.clocks_init
-                0x10001188      0x2bc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10001188                clocks_init
+                0x10001608      0x2bc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10001608                clocks_init
  .text.clock_get_hz
-                0x10001444        0xc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10001444                clock_get_hz
+                0x100018c4        0xc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x100018c4                clock_get_hz
  .text.irq_set_enabled
-                0x10001450       0x24 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10001450                irq_set_enabled
+                0x100018d0       0x24 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100018d0                irq_set_enabled
  .text.irq_get_vtable_handler
-                0x10001474       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10001474                irq_get_vtable_handler
+                0x100018f4       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100018f4                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x10001484       0x54 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10001484                irq_set_exclusive_handler
+                0x10001904       0x54 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10001904                irq_set_exclusive_handler
  .text.irq_remove_handler
-                0x100014d8      0x1b4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x100014d8                irq_remove_handler
+                0x10001958      0x1b4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10001958                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x1000168c       0xb4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x1000168c                irq_add_tail_to_free_list
+                0x10001b0c       0xb4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10001b0c                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x10001740       0x24 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10001740                irq_init_priorities
+                0x10001bc0       0x24 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10001bc0                irq_init_priorities
  .text.pll_init
-                0x10001764       0xa8 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x10001764                pll_init
+                0x10001be4       0xa8 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x10001be4                pll_init
  .text.watchdog_start_tick
-                0x1000180c       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x1000180c                watchdog_start_tick
+                0x10001c8c       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x10001c8c                watchdog_start_tick
  .text.xosc_init
-                0x1000181c       0x28 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x1000181c                xosc_init
+                0x10001c9c       0x28 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x10001c9c                xosc_init
  .text._out_char
-                0x10001844       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10001cc4       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.weak_raw_vprintf
-                0x10001854       0x30 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x10001854                weak_raw_vprintf
- .text          0x10001884       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x10001cd4       0x30 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10001cd4                weak_raw_vprintf
+ .text          0x10001d04       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x10001894       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10001894                rom_func_lookup
+                0x10001d14       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10001d14                rom_func_lookup
  .text.rom_data_lookup
-                0x100018a4       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x100018a4                rom_data_lookup
+                0x10001d24       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10001d24                rom_data_lookup
  .text.rom_funcs_lookup
-                0x100018b4       0x44 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x100018b4                rom_funcs_lookup
+                0x10001d34       0x44 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10001d34                rom_funcs_lookup
  .text.__wrap___aeabi_uidiv
-                0x100018f8       0x4c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x100018f8                __wrap___aeabi_uidiv
-                0x100018f8                __wrap___aeabi_uidivmod
-                0x100018f8                div_u32u32
-                0x100018f8                divmod_u32u32
-                0x10001900                divmod_u32u32_unsafe
-                0x10001928                divmod_u32u32_savestate
+                0x10001d78       0x4c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x10001d78                __wrap___aeabi_uidiv
+                0x10001d78                __wrap___aeabi_uidivmod
+                0x10001d78                div_u32u32
+                0x10001d78                divmod_u32u32
+                0x10001d80                divmod_u32u32_unsafe
+                0x10001da8                divmod_u32u32_savestate
  .text.__aeabi_double_init
-                0x10001944       0x94 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x10001944                __aeabi_double_init
+                0x10001dc4       0x94 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10001dc4                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x100019d8       0x2c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x100019d8                double_table_shim_on_use_helper
+                0x10001e58       0x2c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10001e58                double_table_shim_on_use_helper
  .text.__aeabi_lmul
-                0x10001a04       0x32 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x10001a04                __wrap___aeabi_lmul
- *fill*         0x10001a36        0x2 
+                0x10001e84       0x32 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x10001e84                __wrap___aeabi_lmul
+ *fill*         0x10001eb6        0x2 
  .text.__wrap___aeabi_farithmetic
-                0x10001a38       0x48 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x10001a38                __wrap___aeabi_frsub
-                0x10001a3e                __wrap___aeabi_fsub
-                0x10001a44                __wrap___aeabi_fadd
-                0x10001a4a                __wrap___aeabi_fdiv
-                0x10001a72                __wrap___aeabi_fmul
+                0x10001eb8       0x48 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10001eb8                __wrap___aeabi_frsub
+                0x10001ebe                __wrap___aeabi_fsub
+                0x10001ec4                __wrap___aeabi_fadd
+                0x10001eca                __wrap___aeabi_fdiv
+                0x10001ef2                __wrap___aeabi_fmul
  .text.__wrap___aeabi_cfcmple
-                0x10001a80       0x50 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x10001a80                __wrap___aeabi_cfrcmple
-                0x10001a8c                __wrap___aeabi_cfcmple
-                0x10001a8c                __wrap___aeabi_cfcmpeq
+                0x10001f00       0x50 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10001f00                __wrap___aeabi_cfrcmple
+                0x10001f0c                __wrap___aeabi_cfcmple
+                0x10001f0c                __wrap___aeabi_cfcmpeq
  .text.__wrap___aeabi_fcmpgt
-                0x10001ad0        0xa CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x10001ad0                __wrap___aeabi_fcmpgt
+                0x10001f50        0xa CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10001f50                __wrap___aeabi_fcmpgt
  .text.__wrap___aeabi_ui2f
-                0x10001ada        0xa CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x10001ada                __wrap___aeabi_ui2f
+                0x10001f5a        0xa CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10001f5a                __wrap___aeabi_ui2f
  .text.__wrap___aeabi_i2f
-                0x10001ae4       0x44 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x10001ae4                __wrap___aeabi_i2f
+                0x10001f64       0x44 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10001f64                __wrap___aeabi_i2f
+ .text.__wrap___aeabi_f2iz
+                0x10001fa8       0x4e CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10001fa8                float2int_z
+                0x10001fa8                __wrap___aeabi_f2iz
+ *fill*         0x10001ff6        0x2 
+ .text.float2int
+                0x10001ff8       0x14 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10001ff8                float2int
  .text.__wrap___aeabi_f2uiz
-                0x10001b28        0xc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x10001b28                __wrap___aeabi_f2uiz
+                0x1000200c        0xc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x1000200c                __wrap___aeabi_f2uiz
  .text.__aeabi_float_init
-                0x10001b34       0x64 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x10001b34                __aeabi_float_init
+                0x10002018       0x64 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x10002018                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x10001b98       0x2c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x10001b98                float_table_shim_on_use_helper
- .text          0x10001bc4       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10001bc4                __aeabi_mem_init
- .text.memcpy   0x10001bd4        0xc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10001bd4                __wrap_memcpy
-                0x10001bd4                __wrap___aeabi_memcpy
+                0x1000207c       0x2c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x1000207c                float_table_shim_on_use_helper
+ .text.float232_shims
+                0x100020a8       0x18 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x100020a8                float2int_shim
+                0x100020aa                float2fix_shim
+ .text          0x100020c0       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x100020c0                __aeabi_mem_init
+ .text.memcpy   0x100020d0        0xc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x100020d0                __wrap_memcpy
+                0x100020d0                __wrap___aeabi_memcpy
  .text.stdio_out_chars_no_crlf
-                0x10001be0       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100020dc       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x10001bf0       0xb4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100020ec       0xb4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string.isra.0
-                0x10001ca4       0xfc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100021a0       0xfc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x10001da0       0xa0 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10001da0                __wrap_putchar
+                0x1000229c       0xa0 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000229c                __wrap_putchar
  .text.__wrap_puts
-                0x10001e40       0x3c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10001e40                __wrap_puts
- .text.set_ms   0x10001e7c       0x5c ..\servo\libpico_servo.a(servo.c.obj)
-                0x10001e7c                set_ms
+                0x1000233c       0x3c CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000233c                __wrap_puts
+ .text.set_ms   0x10002378       0x5c ..\servo\libpico_servo.a(servo.c.obj)
+                0x10002378                set_ms
  .text.init_servo
-                0x10001ed8      0x148 ..\servo\libpico_servo.a(servo.c.obj)
-                0x10001ed8                init_servo
- .text.strlen   0x10002020       0x5c c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strlen-stub.o)
-                0x10002020                strlen
+                0x100023d4      0x148 ..\servo\libpico_servo.a(servo.c.obj)
+                0x100023d4                init_servo
+ .text.strlen   0x1000251c       0x5c c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strlen-stub.o)
+                0x1000251c                strlen
  *(.fini)
- .fini          0x1000207c        0x4 c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
-                0x1000207c                _fini
- .fini.__stub   0x10002080       0x40 linker stubs
+ .fini          0x10002578        0x4 c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x10002578                _fini
+ *fill*         0x1000257c        0x4 
+ .fini.__stub   0x10002580       0x40 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -1488,86 +1505,95 @@ LOAD c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x100020c0        0x0 c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x100020c0                . = ALIGN (0x4)
+ .eh_frame      0x100025c0        0x0 c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x100025c0                . = ALIGN (0x4)
 
-.glue_7         0x100020c0        0x0
- .glue_7        0x100020c0        0x0 linker stubs
+.glue_7         0x100025c0        0x0
+ .glue_7        0x100025c0        0x0 linker stubs
 
-.glue_7t        0x100020c0        0x0
- .glue_7t       0x100020c0        0x0 linker stubs
+.glue_7t        0x100025c0        0x0
+ .glue_7t       0x100025c0        0x0 linker stubs
 
-.vfp11_veneer   0x100020c0        0x0
- .vfp11_veneer  0x100020c0        0x0 linker stubs
+.vfp11_veneer   0x100025c0        0x0
+ .vfp11_veneer  0x100025c0        0x0 linker stubs
 
-.v4_bx          0x100020c0        0x0
- .v4_bx         0x100020c0        0x0 linker stubs
+.v4_bx          0x100025c0        0x0
+ .v4_bx         0x100025c0        0x0 linker stubs
 
-.iplt           0x100020c0        0x0
- .iplt          0x100020c0        0x0 c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x100025c0        0x0
+ .iplt          0x100025c0        0x0 c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x100020c0      0x100
+.rodata         0x100025c0      0x118
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
+ .rodata.main.str1.4
+                0x100025c0       0x17 CMakeFiles/tambourduine.dir/main.c.obj
+ .rodata.fan.str1.4
+                0x100025d7        0x6 CMakeFiles/tambourduine.dir/tambourduine.c.obj
+ .rodata.vertical.str1.4
+                0x100025d7        0x6 CMakeFiles/tambourduine.dir/tambourduine.c.obj
+ .rodata.percussion.str1.4
+                0x100025d7        0x7 CMakeFiles/tambourduine.dir/tambourduine.c.obj
+ *fill*         0x100025d7        0x1 
  .rodata.hardware_alarm_claim.str1.4
-                0x100020c0       0x22 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x100020e2        0x2 
+                0x100025d8       0x22 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x100025fa        0x2 
  .rodata.panic.str1.4
-                0x100020e4       0x12 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x100020f6        0x2 
+                0x100025fc       0x12 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x1000260e        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x100020f8        0xc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10002610        0xc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.str1.4
-                0x10002104       0x88 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x1000261c       0x88 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x1000218c        0xc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100026a4        0xc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_69
-                0x10002198        0xc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100026b0        0xc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x100021a4        0xc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100026bc        0xc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x100021b0        0xc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100026c8        0xc CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x100021bc        0x2 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x100021c0                . = ALIGN (0x4)
- *fill*         0x100021be        0x2 
+                0x100026d4        0x2 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100026d8                . = ALIGN (0x4)
+ *fill*         0x100026d6        0x2 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x100021c0                . = ALIGN (0x4)
+                0x100026d8                . = ALIGN (0x4)
 
-.rel.dyn        0x100021c0        0x0
- .rel.iplt      0x100021c0        0x0 c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x100026d8        0x0
+ .rel.iplt      0x100026d8        0x0 c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x100021c0                __exidx_start = .
+                0x100026d8                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x100021c0                __exidx_end = .
-                0x100021c0                . = ALIGN (0x4)
-                0x100021c0                __binary_info_start = .
+                0x100026d8                __exidx_end = .
+                0x100026d8                . = ALIGN (0x4)
+                0x100026d8                __binary_info_start = .
 
-.binary_info    0x100021c0       0x20
+.binary_info    0x100026d8       0x20
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x100021c0        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100026d8        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x100021c4        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100026dc        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x100021c8        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100026e0        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x100021cc        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100026e4        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x100021d0        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100026e8        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr69
-                0x100021d4        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100026ec        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x100021d8        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100026f0        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x100021dc        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100026f4        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
-                0x100021e0                __binary_info_end = .
-                0x100021e0                . = ALIGN (0x4)
-                0x100021e0                __etext = .
+                0x100026f8                __binary_info_end = .
+                0x100026f8                . = ALIGN (0x4)
+                0x100026f8                __etext = .
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -1576,7 +1602,7 @@ LOAD c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../
                 0x20000000       0xc0 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x20000000                ram_vector_table
 
-.data           0x200000c0      0x174 load address 0x100021e0
+.data           0x200000c0      0x174 load address 0x100026f8
                 0x200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -1658,29 +1684,29 @@ LOAD c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../
                 0x20000234                . = ALIGN (0x4)
                 0x20000234                __data_end__ = .
 
-.igot.plt       0x20000234        0x0 load address 0x10002354
+.igot.plt       0x20000234        0x0 load address 0x1000286c
  .igot.plt      0x20000234        0x0 c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x20000234        0x0 load address 0x10002354
+                0x20000234        0x0 load address 0x1000286c
                 0x20000234                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x20040000        0x0 load address 0x10002354
+.scratch_x      0x20040000        0x0 load address 0x1000286c
                 0x20040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                . = ALIGN (0x4)
                 0x20040000                __scratch_x_end__ = .
-                0x10002354                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x1000286c                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x10002354
+.scratch_y      0x20041000        0x0 load address 0x1000286c
                 0x20041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                . = ALIGN (0x4)
                 0x20041000                __scratch_y_end__ = .
-                0x10002354                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x1000286c                __scratch_y_source__ = LOADADDR (.scratch_y)
 
-.bss            0x20000238      0x3cc
+.bss            0x20000238      0x3d4
                 0x20000238                . = ALIGN (0x4)
                 0x20000238                __bss_start__ = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -1691,42 +1717,46 @@ LOAD c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../
  .bss.sf_table  0x20000438      0x100 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
                 0x20000438                sf_table
  .bss           0x20000538       0x1c c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .bss.N         0x20000554        0x4 CMakeFiles/tambourduine.dir/tambourduine.c.obj
+                0x20000554                N
  .bss.alarm_callbacks
-                0x20000554       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x20000558       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.configured_freq
-                0x20000564       0x28 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x20000568       0x28 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .bss.default_alarm_pool_entry_ids_high
-                0x2000058c       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x20000590       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.default_alarm_pool_heap_nodes
-                0x2000059c       0x30 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
- .bss.drivers   0x200005cc        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .bss.filter    0x200005d0        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x200005a0       0x30 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ .bss.drivers   0x200005d0        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .bss.filter    0x200005d4        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .bss.lazy_vsnprintf
-                0x200005d4        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .bss.pools     0x200005d8       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x200005d8        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .bss.pools     0x200005dc       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.sf_clz_func
-                0x200005e8        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x200005e8                sf_clz_func
+                0x200005ec        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x200005ec                sf_clz_func
  .bss.sleep_notifier
-                0x200005ec        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x200005f0        0x4 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.target_hi
-                0x200005f0       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .bss.claimed   0x20000600        0x1 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x200005f4       0x10 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .bss.tempo     0x20000604        0x4 CMakeFiles/tambourduine.dir/tambourduine.c.obj
+                0x20000604                tempo
+ .bss.claimed   0x20000608        0x1 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.irq_hander_chain_free_slot_head
-                0x20000601        0x1 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x20000609        0x1 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .bss.timer_callbacks_pending
-                0x20000602        0x1 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x2000060a        0x1 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  *(COMMON)
-                0x20000604                . = ALIGN (0x4)
- *fill*         0x20000603        0x1 
-                0x20000604                __bss_end__ = .
+                0x2000060c                . = ALIGN (0x4)
+ *fill*         0x2000060b        0x1 
+                0x2000060c                __bss_end__ = .
 
-.heap           0x20000604      0x800
-                0x20000604                __end__ = .
-                0x20000604                end = __end__
+.heap           0x2000060c      0x800
+                0x2000060c                __end__ = .
+                0x2000060c                end = __end__
  *(.heap*)
- .heap          0x20000604      0x800 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-                0x20000e04                __HeapLimit = .
+ .heap          0x2000060c      0x800 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                0x20000e0c                __HeapLimit = .
 
 .stack1_dummy   0x20040000        0x0
  *(.stack1*)
@@ -1735,8 +1765,8 @@ LOAD c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../
  *(.stack*)
  .stack         0x20041000      0x800 CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x10002354        0x0
-                0x10002354                __flash_binary_end = .
+.flash_end      0x1000286c        0x0
+                0x1000286c                __flash_binary_end = .
                 0x20040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -1793,7 +1823,7 @@ LOAD CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_l
 LOAD CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 LOAD CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 LOAD ..\servo\libpico_servo.a
-LOAD C:\Users\neyss\AppData\Local\Temp\ccytbQwE.o
+LOAD C:\Users\neyss\AppData\Local\Temp\ccSvSkRR.o
 LOAD c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libstdc++.a
 LOAD c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a
 START GROUP
@@ -1885,7 +1915,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000592       0x2c ..\servo\libpico_servo.a(servo.c.obj)
  .ARM.attributes
-                0x000005be       0x22 C:\Users\neyss\AppData\Local\Temp\ccytbQwE.o
+                0x000005be       0x22 C:\Users\neyss\AppData\Local\Temp\ccSvSkRR.o
  .ARM.attributes
                 0x000005e0       0x1e c:/progra~2/gnuarm~1/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .ARM.attributes
