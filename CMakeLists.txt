@@ -11,6 +11,8 @@ set(PICO_EXAMPLES_PATH ${PROJECT_SOURCE_DIR})
 pico_sdk_init()
 
 include(example_auto_set_url.cmake)
-
+target_link_libraries(tambourduine PRIVATE pico_stdlib hardware_pwm pico_servo)
+pico_enable_stdio_usb(tambourduine 1)
+pico_enable_stdio_uart(tambourduine 0)
 add_subdirectory(Tambourduine)
 add_subdirectory(servo)

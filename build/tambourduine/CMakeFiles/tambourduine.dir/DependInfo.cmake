@@ -42,7 +42,6 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "LIB_PICO_RUNTIME=1"
   "LIB_PICO_STANDARD_LINK=1"
   "LIB_PICO_STDIO=1"
-  "LIB_PICO_STDIO_UART=1"
   "LIB_PICO_STDLIB=1"
   "LIB_PICO_SYNC=1"
   "LIB_PICO_SYNC_CORE=1"
@@ -102,7 +101,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "C:/Pico/pico-sdk/src/rp2_common/boot_stage2/include"
   "C:/Pico/pico-sdk/src/common/pico_binary_info/include"
   "C:/Pico/pico-sdk/src/rp2_common/pico_stdio/include"
-  "C:/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/include"
   "C:/Pico/pico-sdk/src/rp2_common/hardware_pwm/include"
   "../servo"
   )
@@ -140,7 +138,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c" "tambourduine/CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj" "gcc" "tambourduine/CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj.d"
   "C:/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c" "tambourduine/CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj" "gcc" "tambourduine/CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj.d"
   "C:/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c" "tambourduine/CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" "gcc" "tambourduine/CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj.d"
-  "C:/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c" "tambourduine/CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" "gcc" "tambourduine/CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d"
   "C:/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "tambourduine/CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" "gcc" "tambourduine/CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
   "D:/Pandereta/tambourduine/main.c" "tambourduine/CMakeFiles/tambourduine.dir/main.c.obj" "gcc" "tambourduine/CMakeFiles/tambourduine.dir/main.c.obj.d"
   "D:/Pandereta/tambourduine/tambourduine.c" "tambourduine/CMakeFiles/tambourduine.dir/tambourduine.c.obj" "gcc" "tambourduine/CMakeFiles/tambourduine.dir/tambourduine.c.obj.d"

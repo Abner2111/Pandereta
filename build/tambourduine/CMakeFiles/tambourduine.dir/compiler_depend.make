@@ -1402,60 +1402,6 @@ tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_st
 tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj: C:\Pico\pico-sdk\src\rp2_common\pico_printf\include\pico\printf.h
 tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj: C:\Pico\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio.h
 tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj: C:\Pico\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio\driver.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj: C:\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\include\pico\stdio_uart.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj: C:\Pico\pico-sdk\src\rp2_common\hardware_uart\include\hardware\uart.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\uart.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\uart.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\dreq.h
-
-
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio\driver.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\common\pico_base\include\pico.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\common\pico_base\include\pico\types.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\common\pico_base\include\pico\assert.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdbool.h"
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\arm-none-eabi\include\assert.h"
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\arm-none-eabi\include\_ansi.h"
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\arm-none-eabi\include\newlib.h"
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\arm-none-eabi\include\_newlib_version.h"
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\arm-none-eabi\include\sys\config.h"
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\arm-none-eabi\include\machine\ieeefp.h"
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\arm-none-eabi\include\sys\features.h"
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h"
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\arm-none-eabi\include\stdint.h"
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\arm-none-eabi\include\machine\_default_types.h"
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\arm-none-eabi\include\sys\_intsup.h"
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\arm-none-eabi\include\sys\_stdint.h"
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stddef.h"
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: generated\pico_base\pico\version.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\common\pico_base\include\pico\config.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: generated\pico_base\pico\config_autogen.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\boards\include\boards\pico.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\rp2_common\cmsis\include\cmsis\rename_exceptions.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\rp2_common\pico_platform\include\pico\platform.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\platform_defs.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\arm-none-eabi\include\sys\cdefs.h"
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\common\pico_base\include\pico\types.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\common\pico_base\include\pico\error.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\include\pico\stdio_uart.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\rp2_common\hardware_uart\include\hardware\uart.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\uart.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\rp2_common\hardware_base\include\hardware\address_mapped.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\addressmap.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\uart.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\dreq.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\common\pico_binary_info\include\pico\binary_info.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\common\pico_binary_info\include\pico\binary_info\defs.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\common\pico_binary_info\include\pico\binary_info\structure.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\common\pico_binary_info\include\pico\binary_info\code.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\rp2_common\hardware_gpio\include\hardware\gpio.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\sio.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\sio.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\interp.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\padsbank0.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\pads_bank0.h
 
 
 tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c
@@ -1504,13 +1450,16 @@ tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_st
 tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\uart.h
 tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\uart.h
 tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\dreq.h
-tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\include\pico\stdio_uart.h
 tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Pico\pico-sdk\src\rp2_common\hardware_pll\include\hardware\pll.h
 tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\pll.h
 tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\pll.h
 tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Pico\pico-sdk\src\rp2_common\hardware_clocks\include\hardware\clocks.h
 tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\clocks.h
 tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\clocks.h
+tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Pico\pico-sdk\src\common\pico_binary_info\include\pico\binary_info.h
+tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Pico\pico-sdk\src\common\pico_binary_info\include\pico\binary_info\defs.h
+tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Pico\pico-sdk\src\common\pico_binary_info\include\pico\binary_info\structure.h
+tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Pico\pico-sdk\src\common\pico_binary_info\include\pico\binary_info\code.h
 
 
 tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: ..\tambourduine\main.c
@@ -1544,6 +1493,41 @@ tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: "C:\Program Files (x86)\GNU
 tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\arm-none-eabi\include\machine\types.h"
 tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\arm-none-eabi\include\sys\stdio.h"
 tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: ..\tambourduine\tambourduine.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\common\pico_stdlib\include\pico\stdlib.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\common\pico_base\include\pico.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\common\pico_base\include\pico\types.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\common\pico_base\include\pico\assert.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdbool.h"
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\arm-none-eabi\include\assert.h"
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h"
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\arm-none-eabi\include\stdint.h"
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\arm-none-eabi\include\sys\_intsup.h"
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: generated\pico_base\pico\version.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\common\pico_base\include\pico\config.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: generated\pico_base\pico\config_autogen.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\boards\include\boards\pico.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\rp2_common\cmsis\include\cmsis\rename_exceptions.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\rp2_common\pico_platform\include\pico\platform.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\platform_defs.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\common\pico_base\include\pico\types.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\common\pico_base\include\pico\error.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\common\pico_time\include\pico\time.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\rp2_common\hardware_timer\include\hardware\timer.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\timer.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\rp2_common\hardware_base\include\hardware\address_mapped.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\addressmap.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\timer.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\rp2_common\hardware_gpio\include\hardware\gpio.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\sio.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\sio.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\interp.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\padsbank0.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\pads_bank0.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\rp2_common\hardware_uart\include\hardware\uart.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\uart.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\uart.h
+tambourduine\CMakeFiles\tambourduine.dir\main.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\dreq.h
 
 
 tambourduine\CMakeFiles\tambourduine.dir\tambourduine.c.obj: ..\tambourduine\tambourduine.c
@@ -1612,7 +1596,6 @@ tambourduine\CMakeFiles\tambourduine.dir\tambourduine.c.obj: C:\Pico\pico-sdk\sr
 tambourduine\CMakeFiles\tambourduine.dir\tambourduine.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\uart.h
 tambourduine\CMakeFiles\tambourduine.dir\tambourduine.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\uart.h
 tambourduine\CMakeFiles\tambourduine.dir\tambourduine.c.obj: C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\dreq.h
-tambourduine\CMakeFiles\tambourduine.dir\tambourduine.c.obj: C:\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\include\pico\stdio_uart.h
 
 
 
@@ -1681,8 +1664,6 @@ C:\Pico\pico-sdk\src\boards\include\boards\pico.h:
 C:\Pico\pico-sdk\src\common\pico_binary_info\include\pico\binary_info\code.h:
 
 "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\arm-none-eabi\include\sys\select.h":
-
-C:\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\include\pico\stdio_uart.h:
 
 C:\Pico\pico-sdk\src\rp2_common\hardware_claim\include\hardware\claim.h:
 
@@ -1837,8 +1818,6 @@ C:\Pico\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\xosc.h:
 C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\xosc.h:
 
 C:\Pico\pico-sdk\src\rp2_common\hardware_irq\include\hardware\irq.h:
-
-C:\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c:
 
 C:\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\intctrl.h:
 

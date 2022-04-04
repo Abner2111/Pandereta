@@ -45,10 +45,13 @@ tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_st
  C:\Pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/uart.h \
  C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/uart.h \
  C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/dreq.h \
- C:\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\include/pico/stdio_uart.h \
  C:\Pico\pico-sdk\src\rp2_common\hardware_pll\include/hardware/pll.h \
  C:\Pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/pll.h \
  C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/pll.h \
  C:\Pico\pico-sdk\src\rp2_common\hardware_clocks\include/hardware/clocks.h \
  C:\Pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/clocks.h \
- C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/clocks.h
+ C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/clocks.h \
+ C:\Pico\pico-sdk\src\common\pico_binary_info\include/pico/binary_info.h \
+ C:\Pico\pico-sdk\src\common\pico_binary_info\include/pico/binary_info/defs.h \
+ C:\Pico\pico-sdk\src\common\pico_binary_info\include/pico/binary_info/structure.h \
+ C:\Pico\pico-sdk\src\common\pico_binary_info\include/pico/binary_info/code.h

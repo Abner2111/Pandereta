@@ -64,5 +64,4 @@ tambourduine\CMakeFiles\tambourduine.dir\tambourduine.c.obj: \
  C:\Pico\pico-sdk\src\rp2_common\hardware_uart\include/hardware/uart.h \
  C:\Pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/uart.h \
  C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/uart.h \
- C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/dreq.h \
- C:\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\include/pico/stdio_uart.h
+ C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/dreq.h

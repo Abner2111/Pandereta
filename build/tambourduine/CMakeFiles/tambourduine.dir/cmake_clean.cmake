@@ -74,8 +74,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
   "CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
   "CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj.d"
-  "CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
-  "CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d"
   "CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
   "CMakeFiles/tambourduine.dir/C_/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
   "CMakeFiles/tambourduine.dir/main.c.obj"

@@ -62,9 +62,4 @@ tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_st
  C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/sio.h \
  C:\Pico\pico-sdk\src\rp2_common\pico_printf\include/pico/printf.h \
  C:\Pico\pico-sdk\src\rp2_common\pico_stdio\include/pico/stdio.h \
- C:\Pico\pico-sdk\src\rp2_common\pico_stdio\include/pico/stdio/driver.h \
- C:\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\include/pico/stdio_uart.h \
- C:\Pico\pico-sdk\src\rp2_common\hardware_uart\include/hardware/uart.h \
- C:\Pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/uart.h \
- C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/uart.h \
- C:\Pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/dreq.h
+ C:\Pico\pico-sdk\src\rp2_common\pico_stdio\include/pico/stdio/driver.h

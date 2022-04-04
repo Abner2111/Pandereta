@@ -1221,36 +1221,6 @@ C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.s:
 	cd D:\Pandereta\build\tambourduine
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.s
 
-C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.obj: C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj
-.PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.obj
-
-# target to build an object file
-C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj:
-	cd D:\Pandereta\build
-	$(MAKE) $(MAKESILENT) -f tambourduine\CMakeFiles\tambourduine.dir\build.make /nologo -$(MAKEFLAGS) tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj
-	cd D:\Pandereta\build\tambourduine
-.PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj
-
-C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.i: C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.i
-.PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.i
-
-# target to preprocess a source file
-C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.i:
-	cd D:\Pandereta\build
-	$(MAKE) $(MAKESILENT) -f tambourduine\CMakeFiles\tambourduine.dir\build.make /nologo -$(MAKEFLAGS) tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.i
-	cd D:\Pandereta\build\tambourduine
-.PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.i
-
-C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.s: C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.s
-.PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.s
-
-# target to generate assembly for a file
-C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.s:
-	cd D:\Pandereta\build
-	$(MAKE) $(MAKESILENT) -f tambourduine\CMakeFiles\tambourduine.dir\build.make /nologo -$(MAKEFLAGS) tambourduine\CMakeFiles\tambourduine.dir\C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.s
-	cd D:\Pandereta\build\tambourduine
-.PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.s
-
 C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.obj: C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj
 .PHONY : C_\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.obj
 
@@ -1458,9 +1428,6 @@ help:
 	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj
 	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i
 	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s
-	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj
-	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i
-	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s
 	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj
 	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i
 	@echo ... C_/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s
